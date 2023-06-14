@@ -1,12 +1,20 @@
+/* The universal selector below uses the border-box element to make it easier
+to size elements. It also resets the HTML formatting for padding and margins
+ to 0. */
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* This element selector sets the background color */
 body {
     background-color: #d9dcd6;
 }
+
+/* The class elements below describe the sizing, position,
+and fonts for the header element and all its child elements. */
 
 .header {
     padding: 20px;
@@ -41,14 +49,28 @@ body {
     margin-left: 25px;
 }
 
+/* This elememnt selector colors all <a> elements in the html doc*/
+
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/* This element selector sets the font-size for all <p> elements in the html doc. */
+
 p {
     font-size: 16px;
 }
+
+/* The class selector below determines the dimensions and margin of
+digitial-marketing-meeting.jpeg */
+
+/* When trying to create an alternate text for digital-marketing-meeting.jpeg
+I found that the image would not render properly with the <alt> tag. I found that
+the image pathway was specified in the stylesheet and not the
+html doc. I chose to create a new pathway in the html and commented out the code
+below. This is more in line with the other img elements in the html, and should
+hopefully make it easier to change in the future. */
 
 .hero {
     height: 800px;
@@ -58,6 +80,9 @@ p {
     background-size: cover;
     background-position: center; */
 }
+
+/* The two selectors below tell the <img> elements to float to either the right
+or the left of the <p> element in the respective box */
 
 .float-left {
     float: left;
@@ -69,6 +94,10 @@ p {
     margin-left: 25px;
 }
 
+/* The "content" and "benefits" classes contain elements that style and position
+their respective boxes. The "benefits" class also contains font elements for the text
+in the <aside> element. */
+
 .content {
     width: 75%;
     display: inline-block;
@@ -76,7 +105,7 @@ p {
 }
 
 /* <main> code block contained two ids that had no corresponding element in stylesheet.
-    These have been removed.*/ 
+    These have been removed.*/
 
 .benefits {
     margin-right: 20px;
@@ -89,69 +118,29 @@ p {
     background-color: #2589bd;
 }
 
+/* In the previous version of this stylesheet, each box had its own class.
+Since each box contained the same style elements, I have consolidated these
+groups into single classes. I went on to do this with the heading 
+and image elements, so that they followed the logical structure of the former version*/
+
+/* The elements below style the child elements of the <main> and <aside> elements
+in the html doc, and their child elements in turn. */
+
 .benefit-section {
     margin-bottom: 32px;
     color: #ffffff;
 }
-
-/* .benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
-} */
-
-/* .benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-} */
 
 .benefit-section h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-/* .benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
-} */
-
-/* .benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-} */
-
 .benefit-section img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
-
-/* .benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-} */
-
-/* .benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-} */
 
 .content-section {
     margin-bottom: 20px;
@@ -162,68 +151,16 @@ p {
     color: #ffffff;
 }
 
-/* .search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-} */
-
 .content-section img {
     max-height: 200px;
 }
-
-/* .search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-} */
 
 .content-section h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-/* .search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-} */
+/* The elements below style the footer. */
 
 .footer {
     padding: 30px;
